@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+ :root {
+    --background: linear-gradient(135deg, #667Eea7e 0%, #764ba298 100%);
+    --background2: linear-gradient(to right, #667Eea 0%, #764ba2 100%);
+    --color-primary: #667Eea;
+    --color-secondary: #764ba2;
+    --button_padding: 20px 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background2)
+}
+
+.resume {
+    width: 70%;
+    background: #fff;
+    margin: 25px auto;
+    display: flex;
+}
+
+.left {
+    background: #292b2f;
+    width: 250px;
+    padding: 0 20px;
+}
+
+.right {
+    width: calc(100% - 250px);
+}
+
+.left .img_holder {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img_holder img {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: var(--color-primary);
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--color-primary);
+}
+
+.left .icon {
+    font-size: 40px;
+    color: var(--color-secondary);
+}
+
+.left .text {
+    color: var(--color-secondary);
+    font-size: 13px;
+}
+
+.contact .li_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact .li_wrap .text {
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color: #fff;
+}
+
+.contact .li_wrap .text a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li_wrap {
+    background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text {
+    margin-top: 5px;
+}
+
+.hobbies .li_wrap {
+    border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text {
+    color: #fff;
+}
+
+.hobbies .li_wrap:hover {
+    background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text {
+    color: var(--color-secondary);
+}
+
+.header {
+    background: #292b2f;
+    padding: 15px 30px;
+    color: #fff;
+    height: 240px;
+}
+
+.header .name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about {
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.right_inner {
+    padding: 30px;
+    color: #292b2f;
+}
+
+.right_inner .education {
+    margin-top: 30px;
+}
+
+.right_inner .li_wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: var(--color-secondary);
+}
+
+.right_inner .li_wrap .info {
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.right_inner .li_wrap .info_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+}
+
+.right_inner .li_wrap .info_com {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont {
+    margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--color-secondary);
+    border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background: var(--color-secondary);
+}
+
+@media screen and (max-width: 800px) {
+    .resume {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .left {
+        width: 200vh;
+        padding: 50px;
+    }
+    .right {
+        width: 100%;
+    }
+    .left .img_holder img {
+        width: 120px;
+        position: relative;
+        border: 2px solid #FFF;
+    }
+    .left .text {
+        font-size: 1em;
+    }
+    .contact_wrap .title {
+        display: none
+    }
+    .contact {
+        display: none
+    }
+    .right_inner {
+        background: #FFF;
+        margin: 0;
+        padding: 0;
+        width: 143%;
+    }
+    .skills_wrap {
+        position: relative;
+        left: -14px;
+        width: 108%;
+    }
+    .right {
+        width: 100%;
+    }
+    .header {
+        width: 143%;
+        margin-top: 0px;
+    }
+    .header .name {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left {
+        width: 174.6%;
+        padding: 50px;
+    }
+    .right {
+        width: 100%;
+    }
+    .left .img_holder img {
+        width: 50%;
+        position: relative;
+        border: 2px solid #FFF;
+    }
+    .left .text {
+        font-size: 1em;
+    }
+    .contact_wrap .title {
+        display: none
+    }
+    .contact {
+        display: none
+    }
+    .right_inner {
+        background: #FFF;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .right {
+        width: 173%;
+    }
+    .header {
+        width: 101%;
+        margin-top: 0px;
+    }
+    .header .name {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 400) {
+    .wrapper {
+        width: 100%;
+    }
+    .resume {
+        width: 100%;
+    }
+    .left {
+        width: 173%;
+        padding: 50px;
+    }
+    .right {
+        width: 100%;
+    }
+    .left .img_holder img {
+        width: 50%;
+        position: relative;
+        border: 2px solid #FFF;
+    }
+    .left .text {
+        font-size: 1em;
+    }
+    .contact_wrap .title {
+        display: none
+    }
+    .contact {
+        display: none
+    }
+    .right_inner {
+        background: #FFF;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .right {
+        width: 173%;
+    }
+    .header {
+        width: 100%;
+        margin-top: -3.5px;
+    }
+    .header .name {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+}
