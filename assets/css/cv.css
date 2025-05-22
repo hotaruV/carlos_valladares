@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
 body {
     font-family: 'Raleway', sans-serif;
+    background: var(--background2);
+    margin: 0;
+    padding: 0;
 }
 
- :root {
+:root {
     --background: linear-gradient(135deg, #667Eea7e 0%, #764ba298 100%);
     --background2: linear-gradient(to right, #667Eea 0%, #764ba2 100%);
     --color-primary: #667Eea;
@@ -12,31 +16,28 @@ body {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     box-sizing: border-box;
 }
 
-body {
-    background: var(--background2)
-}
-
 .resume {
-    width: 70%;
-    background: #fff;
+    max-width: 1000px;
     margin: 25px auto;
+    background: #fff;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .left {
     background: #292b2f;
-    width: 250px;
-    padding: 0 20px;
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    flex-shrink: 0;
 }
 
 .right {
-    width: calc(100% - 250px);
+    flex: 1;
+    width: 100%;
 }
 
 .left .img_holder {
@@ -45,7 +46,8 @@ body {
 }
 
 .left .img_holder img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     border-radius: 30px;
 }
 
@@ -65,10 +67,10 @@ body {
     margin-bottom: 15px;
 }
 
-.title:before {
+.title::before {
     content: "";
     position: absolute;
-    top: 35px;
+    bottom: 0;
     right: 0;
     width: 50px;
     height: 3px;
@@ -88,7 +90,6 @@ body {
 .contact .li_wrap {
     display: flex;
     align-items: center;
-    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -104,14 +105,13 @@ body {
 }
 
 .contact .li_wrap .text {
-    width: calc(100% - 50px);
-    word-break: break-word;
     color: #fff;
+    word-break: break-word;
 }
 
 .contact .li_wrap .text a {
+    color: #fff;
     text-decoration: none;
-    color: #FFF;
 }
 
 .skills ul,
@@ -119,6 +119,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
 }
 
 .skills .li_wrap,
@@ -131,6 +132,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .skills .li_wrap {
@@ -144,44 +146,35 @@ body {
 
 .hobbies .li_wrap {
     border: 2px solid #fff;
-}
-
-.hobbies .li_wrap .icon,
-.hobbies .li_wrap .text {
     color: #fff;
 }
 
 .hobbies .li_wrap:hover {
     background: #fff;
-}
-
-.hobbies .li_wrap:hover .icon,
-.hobbies .li_wrap:hover .text {
     color: var(--color-secondary);
 }
 
 .header {
     background: #292b2f;
-    padding: 15px 30px;
     color: #fff;
-    height: 240px;
+    padding: 20px;
 }
 
 .header .name {
-    font-size: 40px;
-    text-transform: uppercase;
+    font-size: 32px;
     font-weight: 700;
+    text-transform: uppercase;
     color: var(--color-primary);
 }
 
 .header .role {
+    font-size: 18px;
     font-weight: 300;
-    font-size: 20px;
 }
 
 .header .about {
     margin-top: 20px;
-    line-height: 26px;
+    line-height: 1.5;
 }
 
 .right_inner {
@@ -195,16 +188,18 @@ body {
 
 .right_inner .li_wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
 .right_inner .li_wrap .date {
-    width: 125px;
+    width: 100%;
+    max-width: 125px;
     color: var(--color-secondary);
 }
 
 .right_inner .li_wrap .info {
-    width: calc(100% - 125px);
+    flex: 1;
     padding-left: 25px;
     position: relative;
 }
@@ -226,7 +221,7 @@ body {
     margin-top: 15px;
 }
 
-.right_inner .li_wrap .info:before {
+.right_inner .li_wrap .info::before {
     content: "";
     position: absolute;
     top: 3px;
@@ -237,7 +232,7 @@ body {
     border-radius: 50%;
 }
 
-.right_inner .li_wrap .info:after {
+.right_inner .li_wrap .info::after {
     content: "";
     position: absolute;
     top: 10px;
@@ -247,141 +242,60 @@ body {
     background: var(--color-secondary);
 }
 
-@media screen and (max-width: 800px) {
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
     .resume {
-        display: block;
+        flex-direction: column;
         margin: 0;
-        padding: 0;
+        width: 100%;
     }
+
     .left {
-        width: 200vh;
-        padding: 50px;
+        max-width: 100%;
+        padding: 20px;
     }
-    .right {
-        width: 100%;
-    }
+
     .left .img_holder img {
-        width: 120px;
-        position: relative;
-        border: 2px solid #FFF;
+        max-width: 150px;
     }
-    .left .text {
-        font-size: 1em;
-    }
-    .contact_wrap .title {
-        display: none
-    }
-    .contact {
-        display: none
-    }
-    .right_inner {
-        background: #FFF;
-        margin: 0;
-        padding: 0;
-        width: 143%;
-    }
-    .skills_wrap {
-        position: relative;
-        left: -14px;
-        width: 108%;
-    }
-    .right {
-        width: 100%;
-    }
-    .header {
-        width: 143%;
-        margin-top: 0px;
-    }
+
     .header .name {
-        font-size: 30px;
-        padding-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .header .role {
+        font-size: 16px;
+    }
+
+    .right_inner {
+        padding: 20px;
+    }
+
+    .skills .li_wrap,
+    .hobbies .li_wrap {
+        width: 80px;
+        height: 80px;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .left {
-        width: 174.6%;
-        padding: 50px;
-    }
-    .right {
-        width: 100%;
-    }
-    .left .img_holder img {
-        width: 50%;
-        position: relative;
-        border: 2px solid #FFF;
-    }
-    .left .text {
-        font-size: 1em;
-    }
-    .contact_wrap .title {
-        display: none
-    }
-    .contact {
-        display: none
-    }
-    .right_inner {
-        background: #FFF;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    .right {
-        width: 173%;
-    }
-    .header {
-        width: 101%;
-        margin-top: 0px;
-    }
+@media (max-width: 480px) {
     .header .name {
-        font-size: 25px;
-        padding-bottom: 15px;
+        font-size: 20px;
     }
-}
 
-@media screen and (max-width: 400) {
-    .wrapper {
-        width: 100%;
+    .header .role {
+        font-size: 14px;
     }
-    .resume {
-        width: 100%;
-    }
-    .left {
-        width: 173%;
-        padding: 50px;
-    }
-    .right {
-        width: 100%;
-    }
-    .left .img_holder img {
-        width: 50%;
-        position: relative;
-        border: 2px solid #FFF;
-    }
-    .left .text {
-        font-size: 1em;
-    }
-    .contact_wrap .title {
-        display: none
-    }
-    .contact {
-        display: none
-    }
+
     .right_inner {
-        background: #FFF;
-        margin: 0;
-        padding: 0;
+        padding: 15px;
+    }
+
+    .skills .li_wrap,
+    .hobbies .li_wrap {
         width: 100%;
-    }
-    .right {
-        width: 173%;
-    }
-    .header {
-        width: 100%;
-        margin-top: -3.5px;
-    }
-    .header .name {
-        font-size: 25px;
-        padding-bottom: 15px;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 10px;
     }
 }
