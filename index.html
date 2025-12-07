@@ -1,202 +1,835 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carlos Valladares | Desarrollador de Software Fullstack</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="index,follow" />
-    <meta name="description"
-        content="Soy Carlos Valladares del Valle, desarrollador FullStack. Esta página está diseñada para quienes desean conocer mi trabajo y contratar mis servicios.">
-   <meta name="keywords" content="Carlos Valladares, Curriculum Vitae, Desarrollo Web, FullStack, HTML, CSS3, JavaScript, PHP, Laravel, servicios desarrollo web">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="es-mx" />
-    <meta name="title" content="Carlos Valladares desarollador web" />
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/imagenes/favicon.ico ">
-    <link rel="stylesheet" href="./assets/css/app.css">
-    <title>Carlos Valladares del Valle | Desarrollador Web</title>
-</head>
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Portafolio de Carlos Valladares, desarrollador de software fullstack en San Luis Potosí. Experiencia en plataformas web y móviles: Thinkers, S6, Vantix, HayNik y Doctorpfile."
+    />
+    <meta
+      name="keywords"
+      content="desarrollador de software, fullstack developer, Laravel, Livewire, Angular, JavaScript, TypeScript, Python, IA, San Luis Potosí, Thinkers, S6, Vantix, HayNik, Doctorpfile"
+    />
+    <meta name="author" content="Carlos Valladares" />
+    <meta name="robots" content="index, follow" />
 
-<body>
-    <header class="hero">
-        <video muted loop autoplay oncanplay="this.muted=true">
-            <source src="./assets/imagenes/video.mp4">
-        </video>
-        <div class="container">
-            <nav class="nav">
-                <a href="#contacto" class="nav__items nav__items--cta">Contactame</a>
-                <a href="#about" class="nav__items">Sobre Mi</a>
-                <a href="#proyectos" class="nav__items">Proyectos</a>
-            </nav>
-            <section class="hero__container">
-                <div class="hero_texts">
-                    <h1 class="hero__title">CarlosV() [{ <span class="hero_texdev">DesarrolladorFullStack()</span> }]
-                    </h1>
-                    <h2 class="hero__subtitle">"La mejor forma de predecir el futuro es inventándolo"</h2>
-                    <a href="" class="hero__cta">Contactame Ahora</a>
-                </div>
-            </section>
+    <!-- Canonical -->
+    <link rel="canonical" href="https://codeforesolutions.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Carlos Valladares | Desarrollador de Software Fullstack"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollo plataformas completas: Thinkers, S6, Vantix, HayNik y Doctorpfile. Backend sólido, frontend claro y proyectos reales en producción."
+    />
+    <meta property="og:url" content="https://codeforesolutions.com/" />
+    <meta
+      property="og:image"
+      content="https://codeforesolutions.com/assets/img/preview-portfolio.jpg"
+    />
+    <meta property="og:locale" content="es_MX" />
+    <meta
+      property="og:site_name"
+      content="CodeFore · Portafolio de Carlos Valladares"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Carlos Valladares | Desarrollador de Software Fullstack"
+    />
+    <meta
+      name="twitter:description"
+      content="Portafolio de proyectos: Thinkers, S6, Vantix, HayNik, Doctorpfile. Desarrollo de software con impacto real."
+    />
+    <meta
+      name="twitter:image"
+      content="https://codeforesolutions.com/assets/img/preview-portfolio.jpg"
+    />
+
+    <!-- Idioma / región -->
+    <meta http-equiv="Content-Language" content="es-MX" />
+
+    <!-- Favicon (cámbialo por el tuyo) -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://codeforesolutions.com/assets/img/favicon.png"
+    />
+
+    <!-- Datos estructurados JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Carlos Valladares",
+        "jobTitle": "Desarrollador de software fullstack",
+        "description": "Desarrollador de software fullstack en San Luis Potosí con experiencia en Laravel, Livewire, Angular, JavaScript, TypeScript, Python e integración de IA en proyectos reales.",
+        "url": "https://codeforesolutions.com/",
+        "image": "https://codeforesolutions.com/assets/img/yo.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Luis Potosí",
+          "addressRegion": "SLP",
+          "addressCountry": "MX"
+        },
+        "knowsAbout": [
+          "Laravel",
+          "Livewire",
+          "Angular",
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "IA aplicada",
+          "SaaS",
+          "Plataformas educativas",
+          "Contrataciones públicas",
+          "Sistemas de salud"
+        ],
+        "sameAs": [
+          "https://github.com/hotaruV",
+          "https://www.linkedin.com/in/tu-perfil"
+        ]
+      }
+    </script>
+
+    <!-- Fuentes y Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="./assets/css/portafolio.css" />
+
+    <!-- JS principal -->
+    <script src="./assets/js/portafolio.js" defer></script>
+  </head>
+  <body>
+    <div class="bg-layer bg-layer--base"></div>
+    <div class="bg-layer bg-layer--glow"></div>
+
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">CodeFore</span>
         </div>
-        <div style="overflow: hidden;" class="hero__wave"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #FFF;"></path>
-            </svg></div>
+
+        <nav class="nav">
+          <a href="#hero" class="nav-link nav-link--active" data-i18n="nav.home"
+            >Inicio</a
+          >
+          <a href="#sobre-mi" class="nav-link" data-i18n="nav.about"
+            >Quién soy</a
+          >
+          <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <a href="#proyectos" class="nav-link" data-i18n="nav.projects"
+            >Proyectos</a
+          >
+          <a href="#contacto" class="nav-link" data-i18n="nav.contact"
+            >Contacto</a
+          >
+        </nav>
+
+        <!-- Switch de idioma -->
+        <div class="lang-switch">
+          <button class="lang-btn lang-btn--active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="presentation container" id="about">
-            <img src="./assets/imagenes/yo.jpg" alt="Carlos Valladares" class="presentation__picture">
-            <h2 class="subtitle">Carlos Valladares</h2>
-            <p class="presentation__copy">
-                Soy originario de la Ciudad de México. Estudié Psicología en la Universidad Nacional Autónoma de México,
-                pero siempre me ha apasionado el diseño web y la programación de aplicaciones. Mi verdadera vocación es
-                decirle a la computadora qué hacer.
+      <!-- HERO -->
+      <section class="hero section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-main reveal" data-animate="fade-up">
+            <p class="hero-kicker" data-i18n="hero.kicker">
+              Desarrollador de software fullstack
             </p>
-            <a href="cv.html" class="presentation__cta">Conoce mi Curriculum Vitae</a>
-        </section>
-        <section class="about container">
-            <div class="about__text">
-                <h2 class="subtitle">Mi Experiencia</h2>
-                <p class="about__paragraph">
-                    La programación siempre me fue una tarea sencilla desde que inicie en este mundo en el año 2008 e
-                    hice mi primer "hola mundo" me he ido desarrollando en esta area, he trabajado para empresas como
-                    MAPFRE en levantamiento de requerimientos, donde finalmente
-                    comprendí que la progremacíon es mucho más que solo crear código, y el analisis del problema siempre
-                    te lleva a encontrar la solución.
-                </p>
-                <p class="about__paragraph">
-                    Me mantengo en constante aprendizaje. Aunque es un reto estar al día con tantas tecnologías, me
-                    esfuerzo por actualizar mis métodos y mejorar mis servicios continuamente.
-                </p>
+
+            <h1 class="hero-title" data-i18n="hero.title">
+              Diseño y construyo<br />
+              plataformas completas,<br />
+              de la base de datos a la interfaz.
+            </h1>
+
+            <!-- Texto ya NO repite toda la lista de proyectos -->
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              Trabajo en plataformas donde hay datos reales, usuarios no
+              técnicos y decisiones que importan: educación, gobierno, soporte
+              técnico, salud e IA aplicada. Me gusta tomar requisitos difusos y
+              convertirlos en sistemas claros, mantenibles y que se puedan poner
+              en producción sin miedo.
+            </p>
+
+            <div class="hero-actions">
+              <!-- CV (luego pones tu link real) -->
+              <a
+                href="./cv.html"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-regular fa-file-lines"></i>
+                <span data-i18n="hero.cv">Ver CV</span>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                href="https://github.com/hotaruV"
+                class="btn btn-ghost"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <!-- LinkedIn eliminado por ahora -->
             </div>
-            <figure class="about__img">
-                <img src="./assets/imagenes/pc.jpg" alt=" " class="about__picture ">
-            </figure>
-            <figure class="about__img about__img--left ">
-                <img src="./assets/imagenes/dev.svg " alt=" " class="about__picture ">
-            </figure>
-            <div class="about__text ">
-                <p class="about__paragraph">
-                    Considero que mi trabajo es mi mejor carta de presentación. Mis proyectos han evolucionado con el
-                    tiempo, y he perfeccionado mis técnicas para ofrecer siempre el mejor servicio posible.
-                </p>
-                <p class="about__paragraph">
-                    Hay muchos desarrolladores web, pero mi meta es destacar. A futuro, planeo crear contenido para
-                    plataformas como Udemy y YouTube, compartiendo mis conocimientos con más personas.
-                </p>
 
+            <div class="hero-meta">
+              <span class="pill" data-i18n="hero.meta1">
+                <i class="fa-solid fa-globe"></i> Trabajo remoto · SLP / Latam
+              </span>
+              <span class="pill" data-i18n="hero.meta2">
+                <i class="fa-solid fa-layer-group"></i> Gobierno · Educación ·
+                IA · Salud
+              </span>
             </div>
+          </div>
 
-        </section>
-        <section class="projects ">
-            <div class="container ">
+          <aside class="hero-preview reveal" data-animate="fade-left">
+            <figure class="hero-device">
+              <div class="hero-device-screen">
+                <!-- Imagen de fondo, luego la cambias -->
+                <img
+                  src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Dashboard en laptop"
+                  class="hero-screen-img"
+                />
 
-                <h2 class="subtitle " id="proyectos ">Mis Proyectos</h2>
-                <div class="projects__grid ">
-                    <article class="projects__item ">
-                        <img src="./assets/imagenes/img3.jpg " alt=" " class=" projects__img ">
-                        <div class="projects__hover ">
-                            <a href="{{route( 'login' class=" projects__enlace ">
-                                <h2 class=" projects__title ">Sistema Adminitración Médica [LARAVEL]</h2>
-                                <i class=" far fa-file-alt projects__icon "></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class=" projects__item ">
-                        <img src=" ./assets/imagenes/img2.jpg " alt=" " class=" projects__img ">
-                        <div class=" projects__hover ">
-                            <h2 class=" projects__title ">Contador [HTML-JAVASCRIPT]</h2>
-                            <i class=" far fa-file-alt projects__icon "></i>
-                        </div>
-                    </article>
-                    <article class=" projects__item ">
-                        <img src=" ./assets/imagenes/img4.jpg " alt=" " class=" projects__img ">
-                        <div class=" projects__hover ">
-                            <h2 class=" projects__title ">ISA CONSULTORIA Y SERVICIOS(Tramites Vehiculares)[HTML-JAVASCRIPT]</h2>
-                            <i class=" far fa-file-alt projects__icon "></i>
-                        </div>
-                    </article>
-
-                    <article class=" projects__item ">
-                        <img src=" ./assets/imagenes/img1.jpg " alt=" " class=" projects__img ">
-                        <div class=" projects__hover ">
-                            <h2 class=" projects__title ">DoctorPfile [PHP]</h2>
-                            <i class=" far fa-file-alt projects__icon "></i>
-                        </div>
-                    </article>
-                    <article class=" projects__item ">
-                        <img src=" ./assets/imagenes/img5.jpg " alt=" " class=" projects__img ">
-                        <div class=" projects__hover ">
-                            <h2 class=" projects__title ">Proyecto</h2>
-                            <i class=" far fa-file-alt projects__icon "></i>
-                        </div>
-                    </article>
+                <div class="hero-device-overlay">
+                  <div class="hero-avatar-wrapper">
+                    <!-- Tu foto va aquí -->
+                    <img
+                      src="./assets/imagenes/yo.jpg"
+                      alt="Foto de perfil"
+                      class="hero-avatar"
+                    />
+                  </div>
+                  <div class="hero-device-text">
+                    <p class="hero-device-name">Carlos Valladares</p>
+                    <p class="hero-device-role" data-i18n="hero.role">
+                      Fullstack Developer
+                    </p>
+                    <p class="hero-device-note" data-i18n="hero.note">
+                      Backend sólido · UX clara · datos con sentido.
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class=" testimony container ">
-            <h2 class=" subtitle ">Opinión de los Clientes</h2>
-            <div class=" testimony__grid ">
-                <article class=" testimony__item ">
-                    <div class=" testimony__person ">
-                        <img src=" ./assets/imagenes/men.jpg " alt=" " class=" testomony__img ">
-                        <div class=" testimony__texts ">
-                            <h3 class=" testomony__name ">Israel Romero Vasquez</h3>
-                            <p class=" testomony__verification ">Gerente de Ventas</p>
-                        </div>
-                    </div>
-                    <p class=" testomony__revwiev ">" Excelente trabajo y muy rápido en la entrega, no tuve que esperar
-                                mucho, estoy agradecido y lo recomiendo mucho "</p>
-                </article>
-                <article class=" testimony__item ">
-                    <div class=" testimony__person ">
-                        <img src=" ./assets/imagenes/woman.jpg " alt=" " class=" testomony__img ">
-                        <div class=" testimony__texts ">
-                            <h3 class=" testomony__name ">Jimena Macias Pacheco</h3>
-                            <p class=" testomony__verification ">Diseñadora Grafica</p>
-                        </div>
-                    </div>
-                    <p class=" testomony__revwiev ">Realmente quede muy contenta con su trabajo lo recomiendo mucho, entrega las cosas rápido y bien hechas... Gracias Carlos</p>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer class=" footer ">
-        <div class=" container footer__grid ">
-            <nav class=" nav nav--footer ">
-                <a href=" # " class=" nav__items nav__items--footer ">Inicio</a>
-                <a href=" # " class=" nav__items nav__items--footer ">Sobre Mi</a>
-                <a href=" # " class=" nav__items nav__items--footer ">Mis Skills</a>
-                <a href=" # " class=" nav__items nav__items--footer ">Proyectos</a>
-            </nav>
-            <div class=" footer__contact ">
-                <h3 class=" footer__title ">Contactame</h3>
-                <div class=" footer__icons ">
-                    <span class=" footer__container-icons ">
-                        <a href=" https://www.facebook.com/carlosvallapsico/ " class=" fab fa-facebook-f footer__icon "
-                            target=" _blank "></a>
-                    </span>
-                    <span class=" footer__container-icons ">
-                        <a href=" # " class=" fab fa-whatsapp footer__icon "></a>
-                    </span>
-                    <span class=" footer__container-icons ">
-                        <a href=" https://github.com/hotaruV " class=" fab fa-github footer__icon " target=" __blank "></a>
-                    </span>
-                </div>
-            </div>
+              </div>
+              <figcaption class="hero-device-caption" data-i18n="hero.caption">
+                De requisitos difusos a sistemas claros que se pueden desplegar
+                y escalar.
+              </figcaption>
+            </figure>
+          </aside>
         </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section class="section" id="sobre-mi">
+        <div class="container">
+          <header class="section-header reveal" data-animate="fade-up">
+            <h2 class="section-title" data-i18n="about.title">Quién soy</h2>
+            <p class="section-subtitle" data-i18n="about.subtitle">
+              Cómo pienso el desarrollo de software.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-text reveal" data-animate="fade-right">
+              <p data-i18n="about.p1">
+                Soy un desarrollador de software <strong>fullstack</strong> que
+                disfruta meterse hasta el fondo del problema: base de datos,
+                backend, frontend y, si hace falta, scripts de análisis en
+                Python. Trabajo con <strong>Laravel</strong>,
+                <strong>Livewire</strong>, <strong>Angular</strong>,
+                <strong>JavaScript / TypeScript</strong> y
+                <strong>Python</strong>
+                en productos que viven en producción, no solo en demos.
+              </p>
+              <p data-i18n="about.p2">
+                He trabajado en proyectos de <strong>educación</strong>,
+                <strong>gobierno</strong>, <strong>salud</strong> y
+                <strong>soporte técnico</strong>. Eso implica lidiar con datos
+                reales, usuarios que no son técnicos y decisiones donde un bug
+                no es solo “un bug”, sino un problema para alguien de carne y
+                hueso.
+              </p>
+              <p data-i18n="about.p3">
+                Me gustan los retos donde hay caos: JSONs enormes, estructuras
+                raras, requerimientos cambiantes. Mi trabajo es ordenar todo eso
+                y convertirlo en sistemas y pantallas que expliquen lo que pasa
+                sin necesidad de una clase de apoyo. Si algo no escala o no es
+                seguro, lo digo y propongo cómo arreglarlo.
+              </p>
+            </div>
+
+            <div class="about-side reveal" data-animate="fade-left">
+              <div class="about-card">
+                <p class="about-label" data-i18n="about.label">Lo que aporto</p>
+                <ul class="about-list">
+                  <li data-i18n="about.item1">
+                    <i class="fa-solid fa-check"></i>
+                    Experiencia real en plataformas completas: diseño de base de
+                    datos, backend, frontend, despliegue y mantenimiento de
+                    sistemas que ya están en producción.
+                  </li>
+                  <li data-i18n="about.item2">
+                    <i class="fa-solid fa-check"></i>
+                    Trabajo cómodo con requisitos que cambian sobre la marcha;
+                    escucho, aterrizo la idea y la convierto en algo programable
+                    sin perder de vista el negocio.
+                  </li>
+                  <li data-i18n="about.item3">
+                    <i class="fa-solid fa-check"></i>
+                    Criterio para priorizar: qué resolver hoy porque duele, qué
+                    dejar para después y qué ni vale la pena construir.
+                  </li>
+                  <li data-i18n="about.item4">
+                    <i class="fa-solid fa-check"></i>
+                    Perseverancia: si algo no funciona, no lo dejo “más o
+                    menos”. Busco la causa, refactorizo, pruebo alternativas y
+                    no suelto el problema hasta que el sistema se comporte como
+                    debe.
+                  </li>
+                  <li data-i18n="about.item5">
+                    <i class="fa-solid fa-check"></i>
+                    Comunicación directa y honesta; si algo está mal diseñado,
+                    lo digo, propongo opciones y me comprometo con la solución,
+                    no con la excusa.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section-header reveal" data-animate="fade-up">
+            <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">
+              Tecnologías con las que realmente he entregado proyectos.
+            </p>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal" data-animate="fade-up">
+              <h3 class="skill-title">Backend</h3>
+              <p class="skill-body">
+                Laravel, Livewire, PHP, diseño de APIs, autenticación,
+                multiempresa, colas de trabajo, reportes PDF, integración con
+                servicios externos y análisis de datos en servidor.
+              </p>
+            </article>
+
+            <article
+              class="skill-card reveal"
+              data-animate="fade-up"
+              data-delay="0.1"
+            >
+              <h3 class="skill-title">Frontend</h3>
+              <p class="skill-body">
+                Angular, TypeScript, componentes reutilizables, formularios
+                complejos, dashboards, diseño responsive y experiencias pensadas
+                para usuarios no técnicos.
+              </p>
+            </article>
+
+            <article
+              class="skill-card reveal"
+              data-animate="fade-up"
+              data-delay="0.2"
+            >
+              <h3 class="skill-title">Datos & IA</h3>
+              <p class="skill-body">
+                Python, TensorFlow, MediaPipe, análisis de sensores, procesos,
+                rendimiento de equipos, generación de resúmenes automáticos e
+                integración de modelos en flujos reales.
+              </p>
+            </article>
+
+            <article
+              class="skill-card reveal"
+              data-animate="fade-up"
+              data-delay="0.3"
+            >
+              <h3 class="skill-title">Entorno & Operación</h3>
+              <p class="skill-body">
+                MySQL, Redis, Docker, Nginx, servidores Linux, Git, organización
+                del código y flujos de despliegue para que el sistema no dependa
+                de una sola persona.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="section" id="proyectos">
+        <div class="container">
+          <header class="section-header reveal" data-animate="fade-up">
+            <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+            <p class="section-subtitle" data-i18n="projects.subtitle">
+              Una muestra de en qué he trabajado y qué tipo de problemas
+              resuelvo.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- THINKERS -->
+            <article class="project-card reveal" data-animate="fade-up">
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Panel académico y apps móviles"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  Thinkers · Ecosistema educativo web y móvil
+                </h3>
+                <p class="project-tagline">
+                  Plataforma que prepara alumnos para la universidad, no solo
+                  para pasar de grado.
+                </p>
+                <p class="project-desc">
+                  Thinkers es un <strong>ecosistema</strong>: una plataforma web
+                  en <strong>Laravel</strong> que funciona como cerebro y apps
+                  móviles conectadas a través de API. Incluye módulos para
+                  alumnos, docentes y familias, así como un sistema propio de
+                  formularios y evaluaciones tipo “Google Forms”, donde se
+                  pueden generar exámenes, tests y estudios clave para
+                  <strong>análisis de datos académicos y de bienestar</strong>.
+                </p>
+                <p class="project-meta">
+                  Diseñé la estructura de alumnos, asignaciones, formularios,
+                  resultados y dashboards. El objetivo es que la escuela tenga
+                  información suficiente para acompañar a los alumnos en su
+                  camino hacia la universidad, no solo para administrar
+                  calificaciones.
+                </p>
+                <p class="project-stack">
+                  Laravel · Livewire · Angular · Apps móviles (API-driven)
+                </p>
+              </div>
+            </article>
+
+            <!-- S6 -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              data-delay="0.1"
+            >
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Sistema de contrataciones públicas"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">S6 · Contrataciones públicas</h3>
+                <p class="project-tagline">
+                  Sistema de captura y gestión para contrataciones públicas a
+                  nivel estatal.
+                </p>
+                <p class="project-desc">
+                  Plataforma usada por áreas de gobierno para organizar,
+                  capturar y dar seguimiento a procesos de contratación. El reto
+                  principal fue traducir procesos administrativos complejos a
+                  flujos claros para usuarios que no son técnicos.
+                </p>
+                <p class="project-meta">
+                  Desarrollo backend y frontend, definición de flujos de
+                  captura, validaciones y reportes. Proyecto con alto nivel de
+                  responsabilidad y reconocimiento por parte de los equipos que
+                  lo usan.
+                </p>
+                <p class="project-stack">
+                  Backend · Frontend · Integración con procesos administrativos
+                </p>
+              </div>
+            </article>
+
+            <!-- VANTIX -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              data-delay="0.2"
+            >
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Dashboard técnico de auditoría"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  Vantix · Auditoría técnica, datos y riesgos
+                </h3>
+                <p class="project-tagline">
+                  Backend robusto, enfoque en seguridad y análisis automático de
+                  riesgos a partir de datos técnicos.
+                </p>
+                <p class="project-desc">
+                  Vantix toma información de hardware, software, procesos y
+                  sensores de temperatura y la convierte en reportes ejecutivos
+                  y alertas de riesgo. El corazón del sistema es un backend
+                  fuerte en Laravel, con un énfasis claro en seguridad,
+                  multiempresa y control de acceso, apoyado por scripts en
+                  <strong>Python</strong> que generan reportes y resúmenes
+                  automáticos.
+                </p>
+                <p class="project-meta">
+                  Me encargué del diseño del modelo de datos, la arquitectura de
+                  backend, integración con analizadores en Python y la lógica
+                  que traduce datos crudos en información útil para soporte
+                  técnico y dirección. Es un proyecto centrado en
+                  <strong>análisis de datos y riesgos</strong>, no solo en
+                  “mostrar tablas”.
+                </p>
+                <p class="project-stack">
+                  Laravel · Livewire · Python · MySQL · Redis · Nestjs
+                </p>
+              </div>
+            </article>
+
+            <!-- HAYNIK -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              data-delay="0.3"
+            >
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Interfaz de cámara e IA"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">HayNik · Reconocimiento de señas</h3>
+                <p class="project-tagline">
+                  IA que interpreta secuencias de señas a través de una API
+                  propia.
+                </p>
+                <p class="project-desc">
+                  Flujo completo desde la cámara: captura, extracción de puntos
+                  clave, envío de datos a una API y clasificación con un modelo
+                  entrenado. El objetivo es acercar la comunicación de señas a
+                  aplicaciones reales.
+                </p>
+                <p class="project-meta">
+                  Integración del modelo, diseño de endpoints de clasificación y
+                  una interfaz de prueba para validar el comportamiento con
+                  usuarios.
+                </p>
+                <p class="project-stack">
+                  Python · TensorFlow · Django API · Angular · MediaPipe
+                </p>
+              </div>
+            </article>
+
+            <!-- DOCTORPFILE -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              data-delay="0.4"
+            >
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/7579820/pexels-photo-7579820.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Sistema para médicos"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  Doctorpfile · Herramienta para médicos
+                </h3>
+                <p class="project-tagline">
+                  Organización de información clínica y flujo de trabajo para
+                  consultorios.
+                </p>
+                <p class="project-desc">
+                  Sistema orientado a médicos para gestionar información de
+                  pacientes, consultas y seguimiento, con un enfoque en
+                  simplificar la captura y visualización de datos sin abrumar al
+                  usuario.
+                </p>
+                <p class="project-meta">
+                  Diseño de flujo de uso, modelos de datos y pantallas clave,
+                  cuidando que la herramienta se integre al día a día del
+                  consultorio.
+                </p>
+                <p class="project-stack">
+                  Laravel · PHP · MySQL · Frontend orientado a formularios
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LABORATORIO / EXPERIMENTOS -->
+      <section class="section" id="lab">
+        <div class="container">
+          <header class="section-header reveal" data-animate="fade-up">
+            <h2 class="section-title" data-i18n="lab.title">
+              Laboratorio Técnico · Proyectos Experimentales
+            </h2>
+            <p class="section-subtitle" data-i18n="lab.subtitle">
+              Ideas, experimentos y pruebas de concepto donde exploro nuevas
+              tecnologías. No son productos finales: son piezas que construyo
+              para aprender, validar o abrir caminos para futuros proyectos
+              reales.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- GraphQL -->
+            <article class="project-card reveal" data-animate="fade-up">
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Backend experimental con GraphQL"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">APIs Experimentales con GraphQL</h3>
+                <p class="project-tagline">
+                  Estructuras de datos complejas expuestas como consultas
+                  rápidas y eficientes.
+                </p>
+                <p class="project-desc">
+                  He creado varios backends experimentales utilizando
+                  <strong>GraphQL</strong>
+                  para probar cómo se comportan consultas dinámicas en sistemas
+                  que necesitan flexibilidad o que manejan datos muy anidados.
+                </p>
+                <p class="project-stack">
+                  Node · GraphQL · JavaScript · TypeScript
+                </p>
+              </div>
+            </article>
+
+            <!-- Mapas -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              data-delay="0.1"
+            >
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Mapas interactivos"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  Mapas Interactivos y Geolocalización
+                </h3>
+                <p class="project-tagline">
+                  Visualización de rutas, eventos y puntos clave en mapas en
+                  tiempo real.
+                </p>
+                <p class="project-desc">
+                  Experimenté con librerías de mapas para construir
+                  visualizaciones geográficas, paneles de rutas y sistemas que
+                  representan datos espaciales.
+                </p>
+                <p class="project-stack">
+                  JavaScript · Mapbox · Leaflet · APIs de geolocalización
+                </p>
+              </div>
+            </article>
+
+            <!-- PLAYGROUND CANVAS -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              id="mini-game-card"
+            >
+              <div class="project-media project-media--canvas">
+                <canvas id="mini-game-canvas"></canvas>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  Playground Interactivo · Órbitas Reactivas
+                </h3>
+                <p class="project-tagline">
+                  Un sistema de “planetas” que orbitan un centro que sigue
+                  suavemente al cursor.
+                </p>
+                <p class="project-desc">
+                  Esta tarjeta renderiza un pequeño sistema de órbitas en
+                  <strong>HTML5 Canvas</strong>: varias esferas giran a
+                  distintas velocidades y radios alrededor de un centro que se
+                  desplaza hacia donde muevas el mouse. Todo se anima con
+                  <strong>requestAnimationFrame</strong> y lógica propia.
+                </p>
+                <p class="project-stack">
+                  JavaScript · HTML5 Canvas · Animación · Matemática aplicada
+                </p>
+              </div>
+            </article>
+
+            <!-- Analítica -->
+            <article
+              class="project-card reveal"
+              data-animate="fade-up"
+              data-delay="0.3"
+            >
+              <div class="project-media">
+                <img
+                  src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Análisis de datos en Python y Java"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Análisis de Datos Avanzado</h3>
+                <p class="project-tagline">
+                  Experimentos con Python y Java para procesar datos masivos y
+                  detectar patrones.
+                </p>
+                <p class="project-desc">
+                  He realizado pruebas de análisis sobre datasets grandes usando
+                  <strong>Pandas</strong>, <strong>Numpy</strong>,
+                  <strong>Scikit-learn</strong> y pipelines en
+                  <strong>Java</strong>. Me interesa entender cómo modelar,
+                  filtrar, limpiar y transformar datos para alimentar sistemas
+                  más inteligentes.
+                </p>
+                <p class="project-stack">
+                  Python · Java · ML básico · Pandas · Numpy
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="section" id="contacto">
+        <div class="container">
+          <header class="section-header reveal" data-animate="fade-up">
+            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">
+              Si ves encaje entre lo que hago y lo que necesitas, platiquemos.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-main reveal" data-animate="fade-right">
+              <p class="contact-text" data-i18n="contact.text1">
+                Me interesa colaborar en proyectos donde pueda aportar criterio
+                técnico, responsabilidad y enfoque a largo plazo. No solo
+                escribir código, sino ayudar a que el producto tenga sentido
+                para quienes lo usan.
+              </p>
+              <p class="contact-text" data-i18n="contact.text2">
+                Prefiero equipos donde haya feedback claro, confianza y ganas de
+                mejorar el código con cada iteración.
+              </p>
+
+              <ul class="contact-info">
+                <!-- EMAIL: botón que copia al portapapeles -->
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <button
+                    type="button"
+                    class="contact-copy-btn"
+                    data-email="carlosvalladaresdelvalle@gmail.com"
+                  >
+                    Correo electrónico
+                  </button>
+                </li>
+
+                <!-- GitHub -->
+                <li>
+                  <i class="fa-brands fa-github"></i>
+                  <a
+                    href="https://github.com/hotaruV"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <aside class="contact-side reveal" data-animate="fade-left">
+              <div class="contact-card">
+                <p class="contact-card-title" data-i18n="contact.cardTitle">
+                  Mensaje sugerido
+                </p>
+                <p class="contact-card-body" data-i18n="contact.cardBody">
+                  “Hola Carlos Valladares, vi tu portafolio y me interesa
+                  explorar cómo podrías sumarte a nuestro equipo / proyecto.
+                  ¿Podemos agendar una llamada para revisar tu experiencia y la
+                  posición?”
+                </p>
+                <p class="contact-card-note" data-i18n="contact.cardNote">
+                  A partir de ahí podemos entrar al detalle técnico, retos y
+                  expectativas de ambos lados.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Carlos Valladares · Fullstack Developer.
+        </p>
+        <div class="footer-links">
+          <a href="#sobre-mi">Quién soy</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
     </footer>
 
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <!-- Toast para copia de correo -->
+    <div id="copy-toast" class="copy-toast">Correo copiado al portapapeles</div>
 
-
-
-    <script src=" https://kit.fontawesome.com/c3d4fa2715.js" crossorigin="anonymous"></script>
-                                <script src="asset/carlosv/js/app.js "></script>
-</body>
-
+    <script src="assets/js/portfolio.js"></script>
+  </body>
 </html>
